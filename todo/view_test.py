@@ -5,4 +5,4 @@ from .models import TodoItem
 
 class TodoView(viewsets.ModelViewSet):  
     serializer_class = TodoSerializer   
-    queryset = TodoItem.objects.all()  
+    queryset = TodoItem.objects.all()     
