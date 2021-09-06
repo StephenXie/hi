@@ -23,7 +23,7 @@ const GPAC = () => {
       setClasses(classes.map((myclass) => ( myclass.id==id ? {...myclass, name: name, grade: grade, weight: weight, credit: credit} : myclass)))
     }
     return(
-    <div className="my-container flex-1  bg-green-50">
+    <div className="my-container flex-1  ">
       <Particle />
       <Header
       className=""

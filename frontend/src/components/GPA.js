@@ -31,9 +31,9 @@ const GPA = ({ classes }) => {
   };
 
   return (
-    <div className="shadow stats w-3/5 mx-auto relative">
+    <div className="shadow stats w-3/5 mx-auto relative overflow-visible">
       <div className="stat">
-        <div className="stat-figure text-blue-500">
+        <div data-tip={GPA.raw_GPA_w} className="stat-figure text-blue-500 tooltip">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -53,7 +53,7 @@ const GPA = ({ classes }) => {
         <div className="stat-desc"><progress value={GPA.pct_w} max="100" class="progress progress-info"></progress></div>
       </div>
       <div className="stat">
-        <div className="stat-figure text-secondary">
+        <div data-tip={GPA.raw_GPA_u} className="stat-figure text-secondary tooltip">
         <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

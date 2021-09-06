@@ -15,7 +15,12 @@ const Particle = () => {
                     }
                   },
                   color: {
-                    value: "#84E6F8"
+                    value: "#ff0000",
+                    animation: {
+                      enable: true,
+                      speed: 20,
+                      sync: true
+                    }
                   },
                   shape: {
                     type: "circle",
@@ -55,13 +60,13 @@ const Particle = () => {
                   line_linked: {
                     enable: true,
                     distance: 300,
-                    color: "#AEFFD8",
-                    opacity: 0.7,
+                    color: "#FFFFF1",
+                    opacity: 0,
                     width: 2
                   },
                   move: {
                     enable: true,
-                    speed: 9,
+                    speed: 3,
                     direction: "none",
                     random: false,
                     straight: false,
@@ -79,7 +84,7 @@ const Particle = () => {
                   events: {
                     onhover: {
                       enable: true,
-                      mode: "repulse"
+                      mode: "bubble"
                     },
                     onclick: {
                       enable: true,
@@ -95,8 +100,8 @@ const Particle = () => {
                       }
                     },
                     bubble: {
-                      distance: 800,
-                      size: 80,
+                      distance: 200,
+                      size: 20,
                       duration: 2,
                       opacity: 0.8,
                       speed: 3
