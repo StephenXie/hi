@@ -1,7 +1,9 @@
 import { React, useState, useEffect } from "react";
-import Button from "./Button";
+import Loading from "./Loading";
 const GPA = ({ classes }) => {
   const [GPA, setGPA] = useState({});
+  const [loading, setLoading] = useState(false);
+  const defaultGPA = {GPA_w: 4, GPA_u:4, pct: 100}
   useEffect(() => {
     getGPA();
   }, [classes]);
@@ -15,6 +17,7 @@ const GPA = ({ classes }) => {
     return myJSON;
   };
   const getGPA = async () => {
+    setLoading(true);
     var myJSON = toJson(classes);
     console.log(myJSON);
     const res = await fetch("https://www.stephenxie.com/apiGPAcal/", {
@@ -28,8 +31,8 @@ const GPA = ({ classes }) => {
     const data = await res.json();
 
     setGPA(data);
+    setLoading(false);
   };
-
   return (
     <div className="shadow stats w-3/5 mx-auto relative overflow-visible">
       <div className="stat">
@@ -49,8 +52,8 @@ const GPA = ({ classes }) => {
           </svg>
         </div>
         <div className="stat-title">Weighted GPA</div>
-        <div className="stat-value">{GPA.GPA_w}</div>
-        <div className="stat-desc"><progress value={GPA.pct_w} max="100" class="progress progress-info"></progress></div>
+        <div className="stat-value">{loading ? defaultGPA.GPA_w : GPA.GPA_w}</div>
+        <div className="stat-desc"><progress value={loading ? defaultGPA.pct : GPA.pct_w} max="100" class="progress progress-info"></progress></div>
       </div>
       <div className="stat">
         <div data-tip={GPA.raw_GPA_u} className="stat-figure text-secondary tooltip">
@@ -69,8 +72,8 @@ const GPA = ({ classes }) => {
           </svg>
         </div>
         <div className="stat-title">Unweighted GPA</div>
-        <div className="stat-value">{GPA.GPA_u}</div>
-        <div className="stat-desc"><progress value={GPA.pct_u} max="100" class="progress progress-secondary"></progress></div>
+        <div className="stat-value">{loading ? defaultGPA.GPA_u : GPA.GPA_u}</div>
+        <div className="stat-desc"><progress value={loading ? defaultGPA.pct : GPA.pct_u} max="100" class="progress progress-secondary"></progress></div>
       </div>
     </div>
   );
