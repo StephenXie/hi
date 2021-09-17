@@ -13,6 +13,7 @@ import Highlight from "./components/Highlight";
 import Tasks from "./components/Tasks";
 import AddTask from "./components/AddTask";
 import Particle from "./components/Particle";
+import Tilt from 'react-tilt'
 function Todo() {
   const [showAddTask, setShowAddTask] = useState(false);
   const [tasks, setTasks] = useState([]);
@@ -72,11 +73,11 @@ function Todo() {
         title="Todo List"
         imgLink="https://images.pexels.com/photos/7103/writing-notes-idea-conference.jpg?auto=compress&cs=tinysrgb&dpr=2&h=125&w=210"
         descriptions="Drop down some notes or reminders for yourself by clicking on the button."
-        button = {<Button
+        button = {<Tilt className="Tilt" options={{ max : 15 }} ><Button
           color={showAddTask ? "red" : "blue"}
           text={showAddTask ? "Hide Add Task" : "Show Add Task"}
           onClick={() => setShowAddTask(!showAddTask)}
-      />}
+      /></Tilt>}
       >
         <Highlight color="blue" text="Todo" /> List
       </Header>

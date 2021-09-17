@@ -20,6 +20,7 @@
     "react-particles-js": "^3.5.3",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-tilt": "^0.1.4",
     "reactstrap": "^8.9.0",
     "tsparticles": "^1.33.3",
     "twind": "^0.16.16",
