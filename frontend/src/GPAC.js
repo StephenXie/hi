@@ -40,6 +40,26 @@ const GPAC = () => {
       )
     );
   };
+  const [honorToggled, setHonorToggled] = useState(true);
+  const toggleHonor = () => {
+    console.log("toggled");
+    setHonorToggled(!honorToggled);
+    setClasses(
+      classes.map((myclass) =>
+        myclass.weight == "H+" || myclass.weight == "H-"
+          ? myclass.weight == "H+"
+            ? {
+                ...myclass,
+                weight: "H-",
+              }
+            : {
+                ...myclass,
+                weight: "H+",
+              }
+          : myclass
+      )
+    );
+  };
   return (
     <div className="my-container flex-1 bg-white ">
       <Particle />
@@ -62,6 +82,29 @@ const GPAC = () => {
                 className="relative"
               />
             </Tilt>
+            <label
+              htmlFor="toogleButton"
+              className="flex flex-col content-center cursor-pointer text-base font-medium justify-center"
+            >
+              <div className="px-2 text-black font-normal">
+                Honors → {" "}
+                {honorToggled ? (
+                    "5"
+                ) : (
+                  "4.5"
+                )}
+              </div>
+              <div className="relative mx-auto">
+                <input
+                  id="toogleButton"
+                  type="checkbox"
+                  className="hidden"
+                  onClick={() => toggleHonor()}
+                />
+                <div className="toggle-path bg-blue-400 w-9 h-5 rounded-full shadow-inner"></div>
+                <div className="toggle-circle absolute w-3.5 h-3.5 bg-white rounded-full shadow inset-y-0 left-0"></div>
+              </div>
+            </label>
           </div>
         }
       >

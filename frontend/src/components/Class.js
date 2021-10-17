@@ -62,8 +62,7 @@ const Class = ({ myId, deleteClass, setData }) => {
       >
         <option value="R">Regular</option>
         <option value="AP/IB">AP/IB</option>
-        <option value="H+">Honors(5)</option>
-        <option value="H-">Honors(4.5)</option>
+        <option value="H+">Honors</option>
         <option value="C">College</option>
       </select>
       <select
