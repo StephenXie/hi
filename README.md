@@ -1,57 +1,70 @@
-# ProjectAlpha
-[![Build Status](https://travis-ci.com/QLSCO/ProjectAlpha.svg?branch=master)](https://travis-ci.com/QLSCO/ProjectAlpha) [![Django CI](https://github.com/QLSCO/ProjectAlpha/actions/workflows/django.yml/badge.svg)](https://github.com/QLSCO/ProjectAlpha/actions/workflows/django.yml) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![Website StephenXie.com](https://img.shields.io/website-up-down-green-red/http/stephenxie.com.svg)](http://stephenxie.com/) [![Commit Activity](https://img.shields.io/github/commit-activity/m/qlsco/projectalpha)](https://github.com/QLSCO/ProjectAlpha/pulse) [![GitHub issues](https://img.shields.io/github/issues/QLSCO/ProjectAlpha)](https://GitHub.com/QLSCO/ProjectAlpha/issues/) [![GitHub issues](https://img.shields.io/github/issues-closed/QLSCO/ProjectAlpha)](https://github.com/QLSCO/ProjectAlpha/issues?q=is%3Aissue+is%3Aclosed) [![GitHub pull-requests](https://img.shields.io/github/issues-pr/QLSCO/ProjectAlpha.svg)](https://GitHub.com/QLSCO/ProjectAlpha/pulls/) [![GitHub pull-requests](https://img.shields.io/github/issues-pr-closed/QLSCO/ProjectAlpha.svg)](https://github.com/QLSCO/ProjectAlpha/pulls?q=is%3Apr+is%3Aclosed)
-## Where can I find this *AWESOME* website?
-Go to https://www.stephenxie.com/ or https://sx-my-app.herokuapp.com/.
-### React website under construction
-We are currently trying to use React.js to redesign the frontend, the code can be found in the ```development-react``` branch.
-The website is currently hosted at http://dev.stephenxie.com/.
-## Wiki
-**Go to the [Wiki page](https://github.com/QLSCO/ProjectAlpha/wiki) for more information about this project**
-## Resources
-**[Tailwind Documentation](https://tailwindcss.com/docs)** - Documentation for tailwind css and how to use it  
-[Tailwind Kit](https://www.tailwind-kit.com/) - They have some nice css components  
-[Django Documentation](https://docs.djangoproject.com/en/3.1/) - Documentation for django, pretty useful  
-[Heroku Postgres](https://devcenter.heroku.com/articles/heroku-postgresql) - How to use the database  
-## Local usage
-Make sure you have python 3.6 or above  
+# Getting Started with Create React App
 
-First, install all of the dependencies needed  
-```
-pip install -r requirements.txt
-```
-To run, enter
-```
-python manage.py runserver
-```
-## File structure
-- Todo, Formatter, Cryptic, GPAcal, PasteX, Linky - apps
-  - Views - the main thing handling the the get and post requests
-    - Can pass arguments to the html  
-  - Scripts - what you do with the inputs
-    - Interact with the views
-    - Logics
-  - Models - database stuff
-- Templates - contains htmls
-  - HTMLs - what user actually sees
-  - base.html - the template html file so that we don't have to copy and paste everytime we make changes   
-- AppX - Home page
-- ProjectX - Settings
-  - url.py - url of pages
-- Static - Assets(e.g. images, css, js)
-## GPA Calculator
-- add and delete class button
-  - implemented using JS and JQuery
-  - [new] using react components
-- input fields: class name(optional), grade, credit, weight
-- using AJAX to update GPA when the form is changed without refreshing the page
-  - using jQuery
-- all button and input fields are powered with some *nice* CSS
-  - currently using Tailwind CSS
-  - might switch to bootstrap later
-- part of a student advisory center concept
-  - college preparation
-  - precentile finding
-  - let user select what college they wanted to go to
-    - gather dataset from colleges
-    - show how users' GPA compare to other candidates
-    - possibly implement goals/"tracks" the user should follow to reach their goal. (i.e: how they need to improve their grade to reach certain GPA, etc.)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
