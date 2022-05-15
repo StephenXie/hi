@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Particles from "react-particles-js";
+import Particles from "react-tsparticles";
 import {
   BrowserRouter as Router,
   Route,

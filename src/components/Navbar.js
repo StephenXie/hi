@@ -11,6 +11,8 @@ const navigation = [
   { name: 'GPAC', href: '/GPAC', },
   { name: 'PasteX', href: '/PasteX', },
   { name: 'Linky', href: '/Linky', },
+  { name: 'Journals', href: '/Journals', },
+  { name: 'Login', href: '/Login', },
 ]
 
 function classNames(...classes) {

@@ -13,7 +13,7 @@ import Highlight from "./components/Highlight";
 import Tasks from "./components/Tasks";
 import AddTask from "./components/AddTask";
 import Particle from "./components/Particle";
-import Tilt from 'react-tilt'
+import Tilt from 'react-parallax-tilt'
 function Todo() {
   const [showAddTask, setShowAddTask] = useState(false);
   const [tasks, setTasks] = useState([]);

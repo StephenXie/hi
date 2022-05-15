@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Particles from "react-particles-js";
+import Particles from "react-tsparticles";
 import { BrowserRouter as Router, Route, Switch, withRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
@@ -13,13 +13,15 @@ import Cryptic from './Cryptic';
 import GPAC from './GPAC';
 import PasteX from './PasteX';
 import Linky from './Linky';
+import Journals from './Journals';
+import Login from './Login';
 import { Nav } from "reactstrap";
 
 const App = () => {
     return (
         <div className="flex flex-col min-h-screen justify-between">
         <Router>
-        <Navbar />
+        <Navbar/>
             <Switch>
                 <Route exact path='/' component={Home} />
                 <Route path='/Todo' component={Todo} />
@@ -28,6 +30,8 @@ const App = () => {
                 <Route path='/GPAC' component={GPAC} />
                 <Route path='/PasteX' component={PasteX} />
                 <Route path='/Linky' component={Linky} />
+                <Route path='/Journals' component={Journals} />
+                <Route path='/Login' component={Login} />
             </Switch>
         </Router>
         <Footer />

@@ -8,7 +8,7 @@ import GPA from "./components/GPA";
 import Classes from "./components/Classes";
 import Class from "./components/Class";
 import Highlight from "./components/Highlight";
-import Tilt from "react-tilt";
+import Tilt from "react-parallax-tilt";
 const GPAC = () => {
   const [classes, setClasses] = useState([
     { id: 0, name: "", grade: "A", weight: "R", credit: "1" },
