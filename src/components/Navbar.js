@@ -6,13 +6,13 @@ import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 const navigation = [
   { name: 'Home', href: '/',  },
   { name: 'Todo', href: '/Todo',  },
-  { name: 'Formatter', href: '/Formatter',  },
-  { name: 'Cryptic', href: '/Cryptic', },
+  // { name: 'Formatter', href: '/Formatter',  },
+  // { name: 'Cryptic', href: '/Cryptic', },
   { name: 'GPAC', href: '/GPAC', },
-  { name: 'PasteX', href: '/PasteX', },
-  { name: 'Linky', href: '/Linky', },
+  // { name: 'PasteX', href: '/PasteX', },
+  // { name: 'Linky', href: '/Linky', },
   { name: 'Journals', href: '/Journals', },
-  { name: 'Login', href: '/Login', },
+  // { name: 'Login', href: '/Login', },
 ]
 
 function classNames(...classes) {

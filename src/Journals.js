@@ -27,8 +27,11 @@ function Journals() {
 
   const fetchJournals = async () => {
     const res = await fetch(
-      "https://www.stephenxie.com/api/journals/?format=json"
-    );
+      "https://www.stephenxie.com/api/journals/?format=json", { 
+        method: 'get', 
+        headers: new Headers({
+        })
+      });
     const data = await res.json();
     return data;
   };
