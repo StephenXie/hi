@@ -12,6 +12,7 @@ const navigation = [
   // { name: 'PasteX', href: '/PasteX', },
   // { name: 'Linky', href: '/Linky', },
   { name: 'Journals', href: '/Journals', },
+  { name: 'Games', href: '/Games', },
   // { name: 'Login', href: '/Login', },
 ]
 
@@ -21,7 +22,7 @@ function classNames(...classes) {
 
 function Navbar({ current }) {
   return (
-    <Disclosure as="nav" className="bg-gray-800 bg-opacity-100">
+    <Disclosure as="nav" className="relative z-10 bg-gray-800 bg-opacity-100">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">

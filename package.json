@@ -21,6 +21,7 @@
     "react-scripts": "^5.0.1",
     "react-tsparticles": "^2.0.6",
     "reactstrap": "^8.9.0",
+    "serve": "^13.0.2",
     "tsparticles": "^2.0.6",
     "twind": "^0.16.16",
     "web-vitals": "^1.1.2"

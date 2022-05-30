@@ -14,6 +14,7 @@ import GPAC from './GPAC';
 import PasteX from './PasteX';
 import Linky from './Linky';
 import Journals from './Journals';
+import Games from './Games';
 import Login from './Login';
 import { Nav } from "reactstrap";
 
@@ -31,6 +32,7 @@ const App = () => {
                 <Route path='/PasteX' component={PasteX} />
                 <Route path='/Linky' component={Linky} />
                 <Route path='/Journals' component={Journals} />
+                <Route path='/Games' component={Games} />
                 <Route path='/Login' component={Login} />
             </Switch>
         </Router>
