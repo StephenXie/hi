@@ -5,14 +5,14 @@ import {
   withRouter,
   Link,
 } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Button from "./components/Button";
-import Highlight from "./components/Highlight";
-import Tasks from "./components/Tasks";
-import AddTask from "./components/AddTask";
-import Particle from "./components/Particle";
+import Navbar from "../Navbar";
+import Header from "../Header";
+import Footer from "../Footer";
+import Button from "../Button";
+import Highlight from "../Highlight";
+import Tasks from "./Tasks";
+import AddTask from "./AddTask";
+import Particle from "../Particle";
 import Tilt from 'react-parallax-tilt'
 function Todo() {
   const [showAddTask, setShowAddTask] = useState(false);

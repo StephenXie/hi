@@ -5,14 +5,14 @@ import {
   withRouter,
   Link,
 } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Button from "./components/Button";
-import JournalList from "./components/JournalList";
-import Highlight from "./components/Highlight";
-import AddJournal from "./components/AddJournal";
-import Particle from "./components/Particle";
+import Navbar from "../Navbar";
+import Header from "../Header";
+import Footer from "../Footer";
+import Button from "../Button";
+import JournalList from "./JournalList";
+import Highlight from "../Highlight";
+import AddJournal from "./AddJournal";
+import Particle from "../Particle";
 import Tilt from 'react-parallax-tilt'
 function Journals() {
   const [showAddJournal, setShowAddJournal] = useState(false);

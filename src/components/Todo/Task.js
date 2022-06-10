@@ -1,5 +1,5 @@
 import { FaTimes } from "react-icons/fa";
-import "../collapse.css"
+import "../../collapse.css"
 const Task = ({ task, onDelete, onToggle }) => {
   return (
     <div

@@ -4,8 +4,6 @@ import { BrowserRouter as Router, Route, withRouter,Link } from "react-router-do
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Tasks from "./components/Tasks";
-import AddTask from "./components/AddTask";
 import { Nav } from "reactstrap";
 
 const PasteX = () => {

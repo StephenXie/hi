@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { withRouter } from "react-router-dom";
 import { AcademicCapIcon } from "@heroicons/react/solid";
-import Header from "./components/Header";
-import Particle from "./components/Particle";
-import Button from "./components/Button";
-import GPA from "./components/GPA";
-import Classes from "./components/Classes";
-import Class from "./components/Class";
-import Highlight from "./components/Highlight";
+import Header from "../Header";
+import Particle from "../Particle";
+import Button from "../Button";
+import GPA from "./GPA";
+import Classes from "./Classes";
+import Class from "./Class";
+import Highlight from "../Highlight";
 import Tilt from "react-parallax-tilt";
 const GPAC = () => {
   const [classes, setClasses] = useState([

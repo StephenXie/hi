@@ -11,8 +11,8 @@ import Header from "./components/Header";
 import { tw } from 'twind'
 import Footer from "./components/Footer";
 import Highlight from "./components/Highlight";
-import Tasks from "./components/Tasks";
-import AddTask from "./components/AddTask";
+import Tasks from "./components/Todo/Tasks";
+import AddTask from "./components/Todo/AddTask";
 import './toggle.css'
 import { Nav } from "reactstrap";
 

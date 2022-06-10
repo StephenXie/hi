@@ -1,5 +1,5 @@
 import { React, useState, useEffect } from "react";
-import Loading from "./Loading";
+import Loading from "../Loading";
 const GPA = ({ classes }) => {
   const [GPA, setGPA] = useState({});
   const [loading, setLoading] = useState(false);

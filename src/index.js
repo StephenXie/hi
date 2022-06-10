@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Todo from './Todo';
+import Todo from './components/Todo/Todo';
 import Home from './Home';
 import App from './App';
 import reportWebVitals from './reportWebVitals';

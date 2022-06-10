@@ -1,5 +1,5 @@
 import { FaTimes } from "react-icons/fa";
-import "../collapse.css"
+import "../../collapse.css"
 const Journal = ({ journal, onDelete}) => {
   return (
     <div
