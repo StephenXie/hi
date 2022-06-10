@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 import Button from "./components/Button";
 import JournalList from "./components/JournalList";
 import Highlight from "./components/Highlight";
-// import AddJournal from "./components/AddJournal";
+import AddJournal from "./components/AddJournal";
 import Particle from "./components/Particle";
 import Tilt from 'react-parallax-tilt'
 function Journals() {
@@ -35,25 +35,27 @@ function Journals() {
     const data = await res.json();
     return data;
   };
-//   const addJournal = async (journal) => {
-//     const res = await fetch(
-//       "https://www.stephenxie.com/api/todos/?format=json",
-//       {
-//         method: "POST",
-//         headers: {
-//           "Content-Type": "application/json",
-//         },
-//         body: JSON.stringify(journal),
-//       }
-//     );
+  const addJournal = async (journal) => {
+    const res = await fetch(
+      "https://www.stephenxie.com/api/journals/?format=json",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(journal),
+      }
+    );
 
-//     const data = await res.json();
+    const data = await res.json();
 
-//     setJournals([...journals, data]);
-//     // const id = Math.floor(Math.random() * 10000) + 1
-//     // const newJournal = {id, ...journal}
-//     // setJournals([...journals, newJournal])
-//   };
+    setJournals([...journals, data]);
+    // const id = Math.floor(Math.random() * 10000) + 1
+    // const newJournal = {id, ...journal}
+    // setJournals([...journals, newJournal])
+  };
+
+
   const deleteJournal = async (id) => {
     await fetch(`https://www.stephenxie.com/api/journals/${id}`, {
       method: "DELETE",
@@ -84,7 +86,7 @@ function Journals() {
       <Header
         title="Journals"
         imgLink="https://images.pexels.com/photos/45718/pexels-photo-45718.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=125&w=210"
-        descriptions="Drop down some notes or reminders for yourself by clicking on the button."
+        descriptions="Write a journal! Write a journal! Write a journal! Write a journal! Write a journal! Write a journal!"
         button = {<Tilt className="Tilt" options={{ max : 15 }} ><Button
           color={showAddJournal ? "red" : "yellow"}
           text={showAddJournal ? "Hide Add Journal" : "Show Add Journal"}
@@ -93,9 +95,9 @@ function Journals() {
       >
         <Highlight color="yellow" text="Journals" />
       </Header>
-{/* 
-      {showAddJournal && <AddJournal onAdd={addJournal} />}
-       */}
+
+      {showAddJournal && <AddJournal onAdd={addJournal} onClose={() => setShowAddJournal(!showAddJournal)}/>}
+      
       {journals.length > 0 ? (
         <JournalList journals={journals} onDelete={deleteJournal}/>
       ) : (

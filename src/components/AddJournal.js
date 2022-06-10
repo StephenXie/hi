@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-const AddTask = ({ onAdd, onClose }) => {
+const AddJournal = ({ onAdd, onClose }) => {
   const [text, setText] = useState("");
   const [description, setDescription] = useState("");
   const [isValid, setisValid] = useState(true);
@@ -30,7 +30,7 @@ const AddTask = ({ onAdd, onClose }) => {
         </button>
         <div className="form-control">
           <label className="label">
-            <span className="label-text">Task</span>
+            <span className="label-text">Journal</span>
           </label>
           <input
             type="text"
@@ -39,7 +39,7 @@ const AddTask = ({ onAdd, onClose }) => {
                 ? "input input-bordered"
                 : "input input-bordered input-error"
             }
-            placeholder="Add Task"
+            placeholder="Add Journal"
             value={text}
             onChange={(e) => setText(e.target.value)}
           />
@@ -61,11 +61,11 @@ const AddTask = ({ onAdd, onClose }) => {
             value={description}
             onChange={(e) => setDescription(e.target.value)}
           />
-          <input type="submit" value="Save Task" className="btn btn-block" />
+          <input type="submit" value="Save Journal" className="btn btn-block" />
         </div>
       </form>
     </div>
   );
 };
 
-export default AddTask;
+export default AddJournal;
