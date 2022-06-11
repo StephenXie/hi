@@ -15,10 +15,15 @@ import PasteX from './PasteX';
 import Linky from './Linky';
 import Journals from './components/Journals/Journals';
 import Games from './Games';
-import Login from './Login';
+import Login from './components/Accounts/Login';
+import Register from './components/Accounts/Register';
+import store from './utils/store';
 import { Nav } from "reactstrap";
-
+import { loadUser } from './utils/actions/auth';
 const App = () => {
+    useEffect(() => {
+        store.dispatch(loadUser());
+    });
     return (
         <div className="flex flex-col min-h-screen justify-between">
         <Router>
@@ -33,7 +38,8 @@ const App = () => {
                 <Route path='/Linky' component={Linky} />
                 <Route path='/Journals' component={Journals} />
                 <Route path='/Games' component={Games} />
-                <Route path='/Login' component={Login} />
+                <Route path='/Account/Login' component={Login} />
+                <Route path='/Account/Register' component={Register} />
             </Switch>
         </Router>
         <Footer />
