@@ -50,20 +50,6 @@ const Home = () => {
           >
             About Me
           </a>
-          <label htmlFor="toogleButton" className="flex cursor-pointer text-base font-medium justify-center">
-          <div className="px-2 text-white">            
-          {techToggled ? <span className="font-bold"><Highlight color="green" text="Tech" l={300} r={500}/></span> : "Tech"} mode</div>
-          <div className="relative">
-            <input
-              id="toogleButton"
-              type="checkbox"
-              className="hidden"
-              onClick={() => toggleTech()}
-            />
-            <div className="toggle-path bg-gray-200 w-9 h-5 rounded-full shadow-inner"></div>
-            <div className="toggle-circle absolute w-3.5 h-3.5 bg-white rounded-full shadow inset-y-0 left-0"></div>
-          </div>
-        </label>
         </div>
         <div
           id="particles-js"
