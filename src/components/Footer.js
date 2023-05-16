@@ -34,7 +34,7 @@ const Footer = () => {
             </div>
             <div className="mt-8 md:mt-0 md:order-1">
               <p className="text-center text-base leading-6">
-                © {/* */}2021{/* */} {/* */}Stephen Xie{/* */}. All rights reserved.
+                © {/* */}2023{/* */} {/* */}Stephen Xie{/* */}. All rights reserved.
               </p>
             </div>
           </div>
