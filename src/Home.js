@@ -40,16 +40,6 @@ const Home = () => {
           <h1 className="w3-margin w3-jumbo leading-tight text-6xl font-extrabold font-sans">
             {techToggled ? <Highlight color="green" text="Stephen"/> : "Stephen"} Xie
           </h1>
-          <a
-            id="about-me-button"
-            href="https://stephenxie.github.io/"
-            className={tw`py-4 px-6 m-4 ${
-              techToggled ? "bg-green-300 hover:bg-green-500" : "bg-yellow-300 hover:bg-yellow-500"
-            } focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-2/5 transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full`}
-            type="button"
-          >
-            About Me
-          </a>
         </div>
         <div
           id="particles-js"
